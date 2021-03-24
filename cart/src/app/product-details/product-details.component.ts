@@ -21,7 +21,7 @@ import { products } from '../products';
 export class ProductDetailsComponent implements OnInit {
 
 
-  product: any;
+  product: {name : string, price:number, description?: string};
 
   constructor(private route: ActivatedRoute, private cartService: CartService) { }
 
